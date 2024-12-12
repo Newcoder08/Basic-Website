@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barangay Zone II</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="top-bar">
+            <div class="logo">
+                <img src="https://scontent.fpag2-1.fna.fbcdn.net/v/t39.30808-6/425643762_736751588520451_3387618959212904265_n.png?_nc_cat=104&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeFFlilBdtmCfzwhRPG_xpu71Tz4UctlXt3VPPhRy2Ve3YFw07RLOz340CIFMV1lKn09N8T7W93J23LrL9IQvd57&_nc_ohc=8XKz7SD6--kQ7kNvgE62u_L&_nc_zt=23&_nc_ht=scontent.fpag2-1.fna&_nc_gid=APHzlVerJ-F8YnJ3sBWLAEy&oh=00_AYDJFBd7cLTujL6OXhhkcz1ObntLkXKCVCmU2AHEgHOtyA&oe=6760A4EA" alt="Barangay Logo">
+                <h1>BARANGAY SANTA CRUZ</h1>
+                <p>City of SAN PABLO</p>
+            </div>
+            <nav id="navbar">
+                <a href="#welcome" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            <button id="subscribeButton" class="certification-button">Subscribe to Newsletter</button>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        </div>
+    </header>
+
+    <!-- Welcome Section -->
+    <section id="welcome" class="welcome">
+        <img src="https://scontent.fpag2-1.fna.fbcdn.net/v/t1.6435-9/167403286_107107101484906_9215715822317888286_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=86c6b0&_nc_eui2=AeFsr8bsrsStnk5eTOqJioWlPxYpfm_w-jE_Fil-b_D6MUKzQx_dvJGay19ZwaJ-MTmCpsGrKgCMhQA9010TGCYB&_nc_ohc=1H1Wfm1UzMAQ7kNvgHzw1W2&_nc_zt=23&_nc_ht=scontent.fpag2-1.fna&_nc_gid=AXem0QASmYTquzd745GkyOP&oh=00_AYDMjZ60xFlrnEwAjGdYW-Gt-Bwh9G15TfYn-Xwnh32vaQ&oe=67824533" alt="Barangay Building">
+        <h2>WELCOME TO BARANGAY SANTA CRUZ</h2>
+        <div class="seals">
+            <img src="https://scontent.fpag2-1.fna.fbcdn.net/v/t39.30808-6/311146034_401260452210133_8014653602153030878_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeFq24UoONj9chyWJEyamnc7Ox79JWlqY6M7Hv0laWpjozo7QaiR7vL8n5Lkpef8Tty9ltBVCE-81NA0bu_QraTF&_nc_ohc=foZeHayoGGsQ7kNvgF3YTRI&_nc_zt=23&_nc_ht=scontent.fpag2-1.fna&_nc_gid=A0RUtDqGvk1pvWWEZfSNT47&oh=00_AYCT-61gpLPMgvyNux28FSCkE2zPnUb8jzcRZM-9P6JrrQ&oe=676082EB" alt="Seal 1">
+            <img src="https://scontent.fpag2-1.fna.fbcdn.net/v/t39.30808-6/438260293_738662555136586_7557422608947640214_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeEZOgVRwscjXKsCVS2lQxOIxwnZEiEPTzTHCdkSIQ9PNHu715H2h61VIxbwJnB25w7hWnetiTkr7wKNE6dPcjGW&_nc_ohc=67CfSEf_PyoQ7kNvgHkQPy9&_nc_zt=23&_nc_ht=scontent.fpag2-1.fna&_nc_gid=AdMhkP46Eo4BfH8LUB_35vg&oh=00_AYBMbKj-d40IdHFCqJs8_1rVnP3yENHRKMBjQ96t4dK8RA&oe=6760751F" alt="Seal 2">
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h3>SERVICES</h3>
+        <div class="services-list">
+            <div class="service-item">Health Services</div>
+            <div class="service-item">Security and Peacekeeping</div>
+            <div class="service-item">Public Works and Maintenance</div>
+            <div class="service-item">Community Events and Programs</div>
+            <div class="service-item">Document and Certification Processing</div>
+        </div>
+    </section>
+
+    <!-- About the Barangay Section -->
+    <section id="about" class="about-barangay">
+        <h3>ABOUT THE BARANGAY</h3>
+        <p>Barangay Zone II is one of the vibrant barangays in the City of Koronadal. Our mission is to serve the community with dedication, focusing on health, safety, and the overall well-being of our citizens. We are committed to transparency, progress, and sustainable development for all residents.</p>
+    </section>
+
+    <!-- Newsletter Pop-up Form -->
+    <div id="newsletterPopup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <h2>Subscribe to Our Newsletter</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
